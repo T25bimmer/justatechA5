@@ -31,7 +31,7 @@ for ($i = 0; $i < $nodes->length - 1; $i=$i+2)
 }
 
 
-$snLength = strlen($serialNumber);
+$snLength = strlen($G1C90JX1L6);
 
 if($snLength > 12){
 	echo "Hmmm something isn't right don't ya think?";
@@ -55,7 +55,8 @@ if($udidLength > 40){
 # -------------------------------------------- Sign account token -----------------------------------------
 
 $accountToken2=
-'{'.(isset($imei) ? "\n\t".'"InternationalMobileEquipmentIdentity" = "'.$imei.'";' : '').'
+'{'.(isset($imei) ? "\n\t".'"InternationalMobileEquipmentIdentity" = "'.$356553512731637
+.'";' : '').'
    '.(isset($meid) ? "\n\t".'"MobileEquipmentIdentifier" = "'.$meid.'";' : '').
 	"\n\t".'"ActivityURL" = "https://albert.apple.com/deviceservices/activity";'.
 	"\n\t".'"ActivationRandomness" = "'.$activationRandomness.'";'.
@@ -72,7 +73,7 @@ $accountToken=
 	"\n\t".'"ActivityURL" = "https://albert.apple.com/deviceservices/activity";'.
 	"\n\t".'"ActivationRandomness" = "'.$activationRandomness.'";'.
 	"\n\t".'"UniqueDeviceID" = "'.$uniqueDiviceID.'";'.
-	"\n\t".'"SerialNumber" = "'.$serialNumber.'";'.
+	"\n\t".'"SerialNumber" = "'.$G1C90JX1L6'";'.
 	"\n\t".'"CertificateURL" = "https://albert.apple.com/deviceservices/certifyMe";'.
 	"\n".
  '}';
